@@ -25,6 +25,10 @@ inputs:
   customText:
     description: 'Custom text'
     required: false
+  listUncoveredFiles: 
+    description: 'List the files that have uncovered lines'
+    required: false
+
 runs:
   using: "node16"
   main: "dist/index.js"
