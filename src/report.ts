@@ -21,6 +21,8 @@ export async function report(
   const pullRequestId = prId || github.context.issue.number
   core.debug(`pullRequestId ${pullRequestId}`)
 
+
+
   if (pullRequestId) {
     await replaceComment({
       token: core.getInput('token', {required: true}),
