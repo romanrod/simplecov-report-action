@@ -11,7 +11,7 @@ interface Result {
 
 async function run(): Promise<void> {
   try {
-    const failedThreshold: number = Number.parseInt(core.getInput('failedThreshold'), 10)
+    const failedThreshold: number = Number.parseFloat(core.getInput('failedThreshold'))
     core.debug(`failedThreshold ${failedThreshold}`)
 
     const resultPath: string = core.getInput('resultPath')

@@ -9,7 +9,8 @@ A GitHub Action that report simplecov coverage.
 - `token` - The GITHUB_TOKEN secret.
 - `failedThreshold` - Failed threshold. (default: `90`)
 - `resultPath` - Path to last_run json file. (default: `coverage/.last_run.json`)
-
+- `customTitle` - Custom title.
+- `customText` - Additional text.
 ## Example
 
 ```yaml
